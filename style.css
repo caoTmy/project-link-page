@@ -13,7 +13,6 @@
   --text-primary: #1a1a1a;
   --text-secondary: #6b7280;
   --accent: #3b3b3b;
-  --accent-hover: #111111;
   --border: #e5e7eb;
   --tag-bg: #f0ede8;
   --tag-text: #4b5563;
@@ -60,26 +59,34 @@ body {
 .profile {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 1.25rem;
+  align-items: flex-start;
 }
 
 .avatar {
-  width: 160px;
+  width: 200px;
   flex-shrink: 0;
   object-fit: contain;
+  margin-left: -0.75rem;
 }
 
 .profile-text {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  padding-top: 2rem;
 }
 
 .name {
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.role {
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--text-primary);
 }
 
@@ -117,7 +124,7 @@ body {
   justify-content: center;
   gap: 0.4rem;
   white-space: nowrap;
-  transition: background 0.18s ease;
+  transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
 }
 
 .link-bubble:hover {
