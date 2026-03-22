@@ -47,7 +47,7 @@ body {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   width: 100%;
-  max-width: 480px;
+  max-width: 600px;
   padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@ body {
 }
 
 .avatar {
-  width: 120px;
+  width: 160px;
   flex-shrink: 0;
   object-fit: contain;
 }
@@ -77,7 +77,7 @@ body {
 }
 
 .name {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--text-primary);
@@ -147,7 +147,7 @@ body {
 
 .tech-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.25rem;
 }
 
@@ -175,6 +175,12 @@ body {
   padding: 0.3rem 0.65rem;
   border-radius: 999px;
   white-space: nowrap;
+  transition: background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tech-item:hover {
+  background: #d1cec9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* ===========================
@@ -190,7 +196,7 @@ body {
 /* ===========================
    Responsive
    =========================== */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .card {
     padding: 2rem 1.25rem;
   }
@@ -201,10 +207,16 @@ body {
   }
 
   .tech-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .name {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .tech-grid {
+    grid-template-columns: 1fr;
   }
 }
