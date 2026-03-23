@@ -1,6 +1,6 @@
 # project-link-page
 
-**Live:** `<!-- add deployed URL later -->`
+**Live:** `http://tmy.dev-craft.de/`
 
 My personal link page inspired by the looks of business cards — a central place for my social profiles and a quick tech stack overview.
 
